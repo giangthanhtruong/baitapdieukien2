@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="number" id="myNumber">
+<button onclick="result()">xem</button>
+<br>
+<br>
+<div id="result"></div>
+<script>
+  function result() {
+    let result = document.getElementById('myNumber').value;
+    if (result > 0) {
+      document.getElementById('result').innerHTML = result + ' là số lớn hơn 0';
+    } else if (result < 0) {
+      document.getElementById('result').innerHTML = result + ' là số nhỏ hơn 0';
+    }else{
+      document.getElementById('result').innerHTML = result + ' là số đặc biệt';
+    }
+  }
+</script>
+
 </body>
 </html>
